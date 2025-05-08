@@ -3,9 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <h1>
-        Welcome Home
-      </h1>
+      <h2>First</h2>
     </div>
   )
 }
