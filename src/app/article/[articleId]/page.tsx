@@ -1,5 +1,6 @@
+"use client";
+import { use } from 'react';
 import Link from 'next/link';
-import React from 'react';
 
 export default function Page({
   params,
@@ -8,8 +9,8 @@ export default function Page({
   params: { articleId: string };
   searchParams: { lang?: 'en' | 'fr' };
 }) {
-  const { articleId } = params;
-  const { lang } = searchParams;
+  const articleId = params.articleId; // Directly use params.articleId
+  const lang = searchParams.lang || "en"; // Directly assign the value without using use
 
   return (
     <div>
