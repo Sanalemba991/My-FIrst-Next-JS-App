@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-function Page() {
+function Order() {
   return (
     <div>
       <Link href="/product">Product</Link>
@@ -15,4 +15,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Order;
