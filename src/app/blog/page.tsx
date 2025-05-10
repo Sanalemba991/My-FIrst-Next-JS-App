@@ -1,6 +1,7 @@
 import React from 'react'
 
-function page() {
+export default async function page() {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
     <div>
       <h2>Blogs</h2>
@@ -8,4 +9,4 @@ function page() {
   )
 }
 
-export default page
+
